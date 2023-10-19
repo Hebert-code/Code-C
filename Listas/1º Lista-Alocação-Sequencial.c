@@ -130,25 +130,25 @@ int main()
     return 0;
 }
 
-//Cria a lista
+//Cria a lista.
 void criar(LISTA *L)
 {
     L->numero = 0;
 }
 
-//Verifica se a lista está vazia 
+//Verifica se a lista está vazia.
 int vazia(LISTA *L)
 {
     return (L->numero == 0);
 }
 
-//Determina o tamanho
+//Determina o tamanho.
 int tamanho(LISTA *L)
 {
     return (L->numero);
 }
 
-//Faz a inserção de um elemento na lista
+//Faz a inserção de um novo elemento na lista.
 void insercao(LISTA *L, int valor, int posicao)
 {
     int aux;
@@ -171,7 +171,7 @@ void insercao(LISTA *L, int valor, int posicao)
     L->numero++;
 }
 
-//Recupera o valor de um elemento a parti da posição
+//Recupera o valor de um elemento a partir da posição.
 int recupera(LISTA *L, int posicao)
 {
     if (posicao < 1 || posicao > L->numero + 1)
@@ -185,7 +185,7 @@ int recupera(LISTA *L, int posicao)
     }
 }
 
-//Faz a retirade de um elemento da lista
+//Faz a retirada de um elemento da lista.
 void retirada(LISTA *L, int posicao)
 {
     int aux;
@@ -201,7 +201,7 @@ void retirada(LISTA *L, int posicao)
     }
 }
 
-//Verifica se o valor pertece a lista
+//Verifica se o valor pertence à lista.
 int pertence(LISTA *L, int valor)
 {
     int i;
