@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#define MAX 100
 typedef struct
 {
     int inf;
@@ -13,7 +13,7 @@ typedef struct
 {
     int primeiro;
     int nodo_livre;
-    NODO LISTA[100];
+    NODO LISTA[MAX];
 } LISTA_ENC;
 
 void criar(LISTA_ENC *);
@@ -105,7 +105,7 @@ void criar(LISTA_ENC *L)
     L->primeiro = -1;  
     L->nodo_livre = 0; 
 
-    for (i = 0; i < (100 - 1); i++)
+    for (i = 0; i < (MAX - 1); i++)
     {
         L->LISTA[i].next = i + 1; 
     }
