@@ -19,11 +19,6 @@ void destruir(LISTA *);
 int pertence(LISTA, int);
 int ordenada(LISTA);
 
-#include <stdio.h>
-#include <stdlib.h>
-
-// Seu código aqui...
-
 int main() {
     LISTA minhaLista;
     int opcao, posicao, valor;
