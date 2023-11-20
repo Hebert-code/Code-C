@@ -43,7 +43,7 @@ int main()
         printf("Linha ou coluna fora dos limites da matriz.\n");
     }
 
-    free(matriz.elementos); // Libera a memória alocada
+    free(matriz.elementos); 
 
     return 0;
 
@@ -97,15 +97,14 @@ void imprimir(MATRIZ *M)
 float retorna(MATRIZ *M, int i, int j)
 {
     if (i == j) {
-        return 0.0; // Diagonal principal é sempre zero em uma matriz anti-simétrica
+        return 0.0; 
     } else if (i < j) {
-        return M->elementos[mapeamento(i, j)]; // Abaixo da diagonal principal
+        return M->elementos[mapeamento(i, j)]; 
     } else {
-        return -M->elementos[mapeamento(j, i)]; // Acima da diagonal principal
+        return -M->elementos[mapeamento(j, i)]; 
     }
 }
 
-//Faz o Mapeamento para pegar somente a
 int mapeamento(int i, int j)
 {
     return i * (i - 1) / 2 + j - 1;
